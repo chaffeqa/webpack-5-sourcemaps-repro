@@ -84,12 +84,13 @@ const config = {
     ["@babel/preset-typescript"],
   ].filter(Boolean),
   plugins: [
-    [
-      "const-enum",
-      {
-        transform: "constObject",
-      },
-    ],
+    // NOTE: add to remove the enum style
+    // [
+    //   "const-enum",
+    //   {
+    //     transform: "constObject",
+    //   },
+    // ],
     isEnvProduction && "babel-plugin-annotate-pure-calls",
     // https://github.com/lodash/babel-plugin-lodash
     isEnvProduction && "lodash",
